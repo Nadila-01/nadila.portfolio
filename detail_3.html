@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Branding Strategy for Female Cosmetics</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li><a href="profil.html">profil</a></li>
+			<li><a href="https://x.com/anzanul" target="_blank">twitter</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="nadila 4.jpeg" class="full-width-image" alt="Cosmetics Branding Project">
+			<h1 class="project-title">Dari Kampung Halaman<br>Menuju Palu</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> / Branding Strategy for Female Cosmetics
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Awal Perjalanan</h2>
+						<p>
+							Perjalanan saya ke Palu menjadi langkah awal yang sangat penting dalam hidup saya. Untuk pertama kalinya, saya meninggalkan kampung halaman demi melanjutkan pendidikan di UIN Datokarama Palu. Keputusan ini menjadi awal dari babak baru dalam perjalanan pendidikan dan kehidupan saya.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Perasaan & Tantangan</h2>
+						<p>
+							Saya merasa senang dan bangga karena akhirnya bisa melanjutkan kuliah dan mulai belajar hidup mandiri. Namun, di balik perasaan tersebut, ada juga rasa takut dan rindu karena harus tinggal jauh dari orang tua dan keluarga. Semua perasaan itu bercampur menjadi satu dan menjadi bagian dari proses saya dalam menghadapi perubahan
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Proses Beradaptasi</h2>
+						<p>
+							Tinggal di Palu mengajarkan saya untuk beradaptasi dengan lingkungan, budaya, dan rutinitas yang baru. Sedikit demi sedikit, saya belajar mengatur waktu, mengurus keperluan sendiri, dan bertanggung jawab atas pilihan yang saya ambil. Proses ini tidak selalu mudah, tetapi sangat berharga.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Makna Merantau</h2>
+						<p>
+							Melalui perjalanan ini, saya menyadari bahwa merantau untuk menuntut ilmu bukan hanya tentang belajar di ruang kelas. Lebih dari itu, perjalanan ini membantu saya membentuk karakter, memperluas wawasan, dan mengenal diri saya sendiri. Semua pengalaman ini menjadi bekal penting bagi langkah saya ke depan.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="nadila 4.jpeg" alt="Dashboard App">
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			learning more?<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="20414e4449414e5a414e554c60474d41494c0e434f4d">[email&#160;dilladaematjala01.@gmail]</a></h2>
+			<p>by Nadila 2025</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b31dfbe7f4b601a',t:'MTc2NjU5NzkyMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	</html>

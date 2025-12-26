@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Experience Design for Dashboard App</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li><a href="profil.html">profil</a></li>
+			<li><a href="https://x.com/anzanul" target="_blank">twitter</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="nadila 3.jpeg" class="full-width-image" alt="Dashboard App UX Design Project">
+			<h1 class="project-title">Tumbuh Bersama<br>Keluarga</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> / User Experience Design for Dashboard App
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Masa SD</h2>
+						<p>
+							Perjalanan pendidikan saya dimulai di SDN Bugis. Saya bersekolah di sana karena mengikuti mama yang kebetulan mengajar di sekolah tersebut. Sejak kecil, saya memang sering ikut mama ke sekolah karena di rumah tidak ada yang menjaga saya papa juga bekerja jadi mama selalu membawa saya bersamanya. Banyak orang yang rumahnya dekat sekolah masih ingat saya sejak kecil. Mereka sering berkata bahwa dulu saya selalu dibawa ke sekolah dengan ayunan, dan sekarang sudah tumbuh besar. Cerita-cerita itu selalu terasa lucu dan hangat jika diingat kembali.
+
+							Seiring waktu, karena jarak SDN Bugis cukup jauh dan ada sekolah yang lebih dekat dengan rumah, saya pindah ke SD Inpres 1 Tilung. Di sekolah baru ini, saya pergi dan pulang sekolah bersama teman-teman dengan berjalan kaki. Kebersamaan sederhana itu membuat hari-hari sekolah terasa menyenangkan.
+
+							Di SD Inpres 1 Tilung, saya mendapatkan teman-teman dekat. Kami berenam dan dengan polosnya menyebut pertemanan kami sebagai sebuah “geng”, khas anak SD yang ingin terlihat keren. Setiap hari kami selalu bersama, mulai dari ke kantin, pergi ke kios, hingga bermain bersama. Jika diingat sekarang, semua itu terasa lucu dan menggemaskan.
+
+							Selain itu, saya juga sempat mengikuti kegiatan pramuka. Kegiatannya seru dan penuh cerita. Semua pengalaman ini menjadi bagian berharga dan tidak akan terulang kembali, semua menjadi kenangan yang tidak perna dilupakan
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Masa MTS</h2>
+						<p>Setelah lulus SD, saya melanjutkan pendidikan ke MTs Al-Khairat Mepanga. Di fase ini, saya harus berpisah dengan teman-teman SD karena kami memilih sekolah yang berbeda. Saya melanjutkan ke MTs, sementara teman-teman saya melanjutkan ke SMP dan sekolah lainnya. Perpisahan itu terasa cukup berat, karena kebersamaan kami sudah terjalin sejak lama.
+
+							Di MTs, perjalanan baru pun dimulai. Saya bertemu dengan teman-teman baru dan mulai membangun pertemanan yang semakin dekat. Kami berjumlah tujuh orang, dan kebersamaan kami tidak jauh berbeda seperti saat SD. Hampir setiap hari kami selalu bersama, saling berbagi cerita, belajar bersama, dan melewati berbagai kegiatan sekolah bersama-sama.
+
+							Di sekolah ini, saya juga mulai belajar lebih mandiri dan bertanggung jawab terhadap tugas-tugas sekolah. Pelajaran semakin banyak dan tantangan pun bertambah, namun dari sinilah saya belajar mengatur waktu, berusaha lebih keras, dan memahami bahwa setiap proses membutuhkan kesabaran dan usaha.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Masa SMA</h2>
+						<p>
+							 Perjalanan pendidikan saya berlanjut ke SMA Negeri 1 Mepanga. Masa SMA menjadi fase yang sangat berkesan karena di sinilah saya mulai memikirkan masa depan dan menentukan pilihan setelah lulus. Saya belajar menghadapi tekanan akademik, mengenal minat diri sendiri, serta mempersiapkan langkah untuk jenjang berikutnya.
+
+							Saat lulus SMA, saya kembali harus berpisah dengan teman-teman karena kami memilih jalan yang berbeda. Ada yang melanjutkan ke pesantren, ada yang ke sekolah lain, dan ada pula yang memilih jalur berbeda. Dari sekian banyak pertemanan, ada tiga orang yang hubungannya tetap dekat hingga sekarang, yaitu saya, Nesha, dan Naya. Kami selalu bersama semasa SMA, mulai dari belajar di sekolah, jalan-jalan, hingga sering berkumpul di rumah. Kami biasa bergantian berkumpul di rumah saya, rumah Naya, dan yang paling sering di rumah Nesha.
+
+							Kedekatan kami bukan hanya terasa di antara kami bertiga, tetapi juga dengan keluarga masing-masing. Orang tua kami sudah saling mengenal dengan baik. Bahkan, jika ada acara di rumah saya, nesha dan naya sering ditanya dan dipanggil untuk datang, layaknya keluarga sendiri. Hubungan ini membuat persahabatan kami terasa sangat hangat dan penuh makna.
+
+							Kami bertiga sempat menyusun rencana untuk melanjutkan kuliah bersama di Palu dan tinggal di satu kos. Namun, rencana itu belum terwujud. Setelah lulus, Nesha memutuskan merantau ke Kalimantan, sementara Naya memilih menunda kuliah selama satu tahun. Akhirnya, kami terpisah saya berada di Palu, Nesha di Kalimantan, dan Naya di kampung halaman.
+
+							Satu tahun kemudian, Naya menyusul ke Palu untuk melanjutkan kuliahnya, dan kami pun tinggal satu kos bersama. Meski begitu, rencana lama kami untuk berkumpul bertiga belum sepenuhnya terwujud karena Nesha masih berada di tanah rantau dan belum pulang. Kami belum pernah lagi berkumpul lengkap bertiga, tetapi di sela kesibukan masing-masing, kami selalu menyempatkan diri untuk saling berkabar, mengobrol lewat chat, dan melakukan video call untuk melepas rindu. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Masa Kuliah</h2>
+						<p>
+							Sekarang, saya melanjutkan pendidikan ke perguruan tinggi UIN Datokarama Palu sebagai mahasiswa Jurusan Sistem Informasi angkatan 2024. Merantau untuk kuliah menjadi pengalaman baru yang sangat berkesan bagi saya. Hidup jauh dari orang tua mengajarkan saya untuk lebih mandiri, bertanggung jawab, dan mengatur kehidupan sendiri.
+
+							Di awal perkuliahan, saya sempat merasa takut karena sering mendengar cerita bahwa pertemanan di dunia kuliah tidak sebaik saat masih sekolah. Namun, semua kekhawatiran itu perlahan terhapus ketika saya bertemu dengan teman-teman yang baik. Kami saling membantu dalam perkuliahan, belajar bersama, dan berbagi pengalaman satu sama lain.
+
+							Kedekatan yang terjalin membuat saya merasa tidak sendiri meski berada di tanah rantau. Alhamdulillah, pertemuan dengan teman-teman ini justru mematahkan cerita-cerita yang saya dengar sebelumnya. Dari mereka, saya belajar bahwa kebersamaan, saling mendukung, dan keikhlasan tetap bisa tumbuh di mana pun, termasuk di dunia perkuliahan. Semua proses dari SD hingga kuliah menjadi bagian penting yang membentuk diri saya hingga saat ini.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="nadila 3.jpeg" alt="Dashboard App Main Interface">
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			learning more?<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d2b3bcb6bbb3bca8b3bca7be92b5bfb3bbbefcb1bdbf">[email&#160;dilladaematjala01.@gmail]</a></h2>
+			<p>By Nadila 2025</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	</html>

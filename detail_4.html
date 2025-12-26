@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Experience Design for Dashboard App</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li><a href="profil.html">profil</a></li>
+			<li><a href="https://x.com/anzanul" target="_blank">twitter</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="nadila 5.jpeg" class="full-width-image" alt="Dashboard App UX Design Project">
+			<h1 class="project-title">Laut Dan<br>Ketenangan</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> / User Experience Design for Dashboard App
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Laut dan Ketertarikan Saya</h2>
+						<p>
+							Saya memiliki ketertarikan yang terhadap laut. Setiap kali ada waktu luang, saya senang pergi ke laut untuk sekadar menikmati suasananya dan ber foto-foto. Tidak perlu aktivitas khusus, cukup duduk dan memandang hamparan laut yang luas sudah membuat hati saya merasa lebih nyaman.
+						</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Tempat Menenangkan Diri</h2>
+						<p>
+							Memandang laut selalu menjadi cara saya untuk melepas lelah dan menenangkan pikiran. Suara ombak, angin yang sejuk, serta suasana yang terbuka membantu saya meredakan rasa penat setelah menjalani aktivitas sehari-hari. Di sana, saya merasa lebih tenang dan damai.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Waktu untuk Merenung</h2>
+						<p>
+							Pergi ke laut juga menjadi waktu bagi saya untuk merenung dan memberi ruang bagi diri sendiri. Saya bisa menata pikiran, mengenali perasaan, dan kembali menemukan semangat. Momen sederhana di tepi laut sering kali memberi ketenangan yang sulit saya dapatkan di tempat lain.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Makna Laut bagi Saya</h2>
+						<p>
+							Bagi saya, laut bukan sekadar tempat untuk berkunjung, tetapi ruang untuk mengisi ulang energi dan menenangkan hati. Setiap kunjungan ke laut selalu meninggalkan rasa bahagia dan syukur, serta membuat saya lebih siap menghadapi hari-hari berikutnya.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="nadila 5.jpeg" alt="Dashboard App Main Interface">
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			learning more?<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d2b3bcb6bbb3bca8b3bca7be92b5bfb3bbbefcb1bdbf">[email&#160;dilladaematjala01.@gmail.com]</a></h2>
+			<p>by Nadila 2025</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	</html>
