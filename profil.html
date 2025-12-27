@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Profil Tersimpan</title>
+	<title>Form Profil</title>
 	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -25,20 +25,41 @@
 		</ul>
 	</nav>
 
-	<section class="project">
+	<section class="project blue">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm">
-					<h1>Profil Tersimpan</h1>
-					<p>Berikut hasil input data yang baru saja Anda simpan.</p>
+					<h1>Form Profil</h1>
+					<p>Isi data diri singkat di bawah ini, lalu tekan tombol simpan untuk melihat hasilnya.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm">
-					<div id="profilResult">
-						<p>Data belum tersedia. Silakan isi formulir terlebih dahulu.</p>
-					</div>
-					<a href="profil.html" class="button">Kembali ke Form</a>
+					<form id="profilForm">
+						<ul>
+							<li>
+								<label for="nim">NIM</label><br>
+								<input type="text" id="nim" name="nim" required>
+							</li>
+							<li>
+								<label for="nama">Nama</label><br>
+								<input type="text" id="nama" name="nama" required>
+							</li>
+							<li>
+								<label for="alamat">Alamat</label><br>
+								<textarea id="alamat" name="alamat" rows="3" required></textarea>
+							</li>
+							<li>
+								<label for="hobi">Hobi</label><br>
+								<input type="text" id="hobi" name="hobi" required>
+							</li>
+							<li>
+								<label for="instagram">Instagram</label><br>
+								<input type="text" id="instagram" name="instagram" placeholder="@username" required>
+							</li>
+						</ul>
+						<button type="submit" class="button">Simpan</button>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -46,10 +67,10 @@
 
 	<footer id="contact">
 		<h2>any questions?<br>
-			find me here <br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe9b939f9792be8497958c9fd0979a">[email&#160;dilladaematjala@gmail.com]</a></h2>
+			find me here <br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="187d75797174586271736a7936717c">[email&#160;dilladaematjala@gmail.com]</a></h2>
 			<p>by Nadila 2025</p>
 		</footer>
-		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="javascript/js.js"></script>
-	<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b4ad19a4b54b416',t:'MTc2Njg1OTQ4OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="javascript/js.js"></script>
+	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 	</html>
