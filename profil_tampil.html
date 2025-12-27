@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Tampil</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5; 
+        }
+
+        .container {
+            width: 420px;
+            margin: 80px auto;
+            background: #ffffff; 
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-top: 10px solid #FFB6C1; 
+        }
+
+        h2 {
+            text-align: center;
+            color: #FFB6C1;
+            margin-bottom: 25px;
+        }
+
+        p {
+            color: #FFB6C1; 
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        strong {
+            color: #FFB6C1;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            padding: 10px;
+            background: #FFB6C1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            background: #FFB6C1;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Data Profil</h2>
+
+    <p><strong>NIM:</strong> <span id="nim"></span></p>
+    <p><strong>Nama:</strong> <span id="nama"></span></p>
+    <p><strong>Alamat:</strong> <span id="alamat"></span></p>
+    <p><strong>Hobi:</strong> <span id="hobi"></span></p>
+    <p><strong>Instagram:</strong> <span id="instagram"></span></p>
+
+    <a href="profil.html" class="back">Kembali ke Form</a>
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+
+    document.getElementById("nim").innerText = params.get("nim");
+    document.getElementById("nama").innerText = params.get("nama");
+    document.getElementById("alamat").innerText = params.get("alamat");
+    document.getElementById("hobi").innerText = params.get("hobi");
+    document.getElementById("instagram").innerText = params.get("instagram");
+</script>
+
+</body>
+</html>
