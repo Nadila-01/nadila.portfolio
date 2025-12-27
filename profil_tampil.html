@@ -1,84 +1,56 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Profil Tampil</title>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5; 
-        }
-
-        .container {
-            width: 420px;
-            margin: 80px auto;
-            background: #ffffff; 
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            border-top: 10px solid #FFB6C1; 
-        }
-
-        h2 {
-            text-align: center;
-            color: #FFB6C1;
-            margin-bottom: 25px;
-        }
-
-        p {
-            color: #FFB6C1; 
-            font-size: 16px;
-            margin: 10px 0;
-        }
-
-        strong {
-            color: #FFB6C1;
-        }
-
-        .back {
-            display: block;
-            text-align: center;
-            margin-top: 25px;
-            padding: 10px;
-            background: #FFB6C1;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .back:hover {
-            background: #FFB6C1;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profil Tersimpan</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.no-sticky nav { position: static; }
+	</style>
 </head>
 
-<body>
+<body class="no-sticky">
+	<nav>
+		<ul>
+			<li><a href="index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li><a href="profil.html">profil</a></li>
+			<li><a href="" target="_blank">twitter</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
 
-<div class="container">
-    <h2>Data Profil</h2>
+	<section class="project">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<h1>Profil Tersimpan</h1>
+					<p>Berikut hasil input data yang baru saja Anda simpan.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<div id="profilResult">
+						<p>Data belum tersedia. Silakan isi formulir terlebih dahulu.</p>
+					</div>
+					<a href="profil.html" class="button">Kembali ke Form</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <p><strong>NIM:</strong> <span id="nim"></span></p>
-    <p><strong>Nama:</strong> <span id="nama"></span></p>
-    <p><strong>Alamat:</strong> <span id="alamat"></span></p>
-    <p><strong>Hobi:</strong> <span id="hobi"></span></p>
-    <p><strong>Instagram:</strong> <span id="instagram"></span></p>
-
-    <a href="profil.html" class="back">Kembali ke Form</a>
-</div>
-
-<script>
-    const params = new URLSearchParams(window.location.search);
-
-    document.getElementById("nim").innerText = params.get("nim");
-    document.getElementById("nama").innerText = params.get("nama");
-    document.getElementById("alamat").innerText = params.get("alamat");
-    document.getElementById("hobi").innerText = params.get("hobi");
-    document.getElementById("instagram").innerText = params.get("instagram");
-</script>
-
+	<footer id="contact">
+		<h2>any questions?<br>
+			find me here <br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe9b939f9792be8497958c9fd0979a">[email&#160;dilladaematjala@gmail.com]</a></h2>
+			<p>by Nadila</p>
+		</footer>
+		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="javascript/js.js"></script>
+	<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b4ad19a4b54b416',t:'MTc2Njg1OTQ4OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
-</html>
+	</html>
+
